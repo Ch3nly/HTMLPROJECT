@@ -1,0 +1,103 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+    <meta charset="utf-8" />
+    <title>דף הרשמה</title>
+    <link rel="icon" href="Images/Register.jpg">
+    <link rel="stylesheet" href="Styles/StyleReg.css">
+    <!--https://github.com/chenly12/html_project_   - גיטאהב - לא מעודכן -->
+    <!--<script>
+        function show1() {
+            area.hidden = !area.hidden;
+        }
+    </script>-->
+
+
+</head>
+<body>
+    
+    <meta charset="utf-8" />
+    <script src="ScriptReg.js"></script>
+    
+
+
+    <div id="REG">
+        <h1>דף הרשמה</h1>
+        <div dir="rtl" class="divlink">
+            <a id="link" href="index.html">מעבר לדף הראשי!</a>
+            <!--more links here-->
+        </div>
+
+        <form dir="rtl" name="RegisterForm">
+            <label for="fname">שם:</label><br>
+            <input type="text" id="fname" class="roundedtxtbox" name="fname" value="" placeholder="שם" required><br>
+            <br />
+            <label for="lname">שם משפחה:</label><br>
+            <input type="text" id="lname" class="roundedtxtbox" name="lname" value="" required placeholder="שם משפחה"><br><br>
+            <label for="email">אימייל:</label><br>
+            <input type="text" id="email" class="roundedtxtbox" name="email" value="" required placeholder="אימייל"><br>
+            <br />
+            <label for="password">סיסמה:</label><br>
+            <input type="password" id="password" class="roundedtxtbox" name="password" value="" required placeholder="סיסמה" minlength="8" onkeyup='check();'><br>
+            <br />
+            <label for="password">אימות סיסמה:</label><br>
+            <input type="password" id="confirm_password" class="roundedtxtbox" name="confirm_password" value="" required placeholder="אימות סיסמה" minlength="8" onkeyup='check();'><br>
+            <span id='message'></span>
+            <br />
+
+            <label for="phonenumber">טלפון:</label><br>
+            <input type="tel" id="phonenumber" class="roundedtxtbox" name="phonenumber" value="" required placeholder="מספר טלפון"><br>
+            <br />
+
+            <input type="radio" id="male" name="gender" value="male" onclick="hide();">
+            <label for="male">זכר</label><br>
+            <input type="radio" id="female" name="gender" value="female" onclick="hide();">
+            <label for="female">נקבה</label><br>
+            <input type="radio" id="other" name="gender" value="other" onclick="show();">
+            <label for="other">אחר</label>
+            <textarea id="area" class="roundedtxtbox" style="display: none;" NAME="data" ROWS=1 COLS=21></textarea>
+            <br />
+            <br />
+            <label for="birthday">תאריך לידה</label>
+            <input type="date" id="birthday" class="roundedtxtbox2" name="birthday">
+            <br />
+            <br />
+
+            <label for="birthday">בחר את הלהקה האהובה עליך</label>
+            <select class="roundedtxtbox2" name="11348[65183]">
+                <option value="none" disabled>בחר</option>
+                <option value="mer">מרסדס בנד</option>
+                <option value="mo">מוניקה סקס</option>
+                <option value="me">משינה</option>
+                <option value="eifo">איפה הילד</option>
+                <option value="hay">היהודים</option>
+                <option value="hata">התבלינים</option>
+                <option value="habi">הבילויים</option>
+                <option value="kave">כוורת</option>
+                <option value="hado">הדורבנים</option>
+                <option value="tipe">טיפקס</option>
+            </select>
+            <br />
+            <br />
+            <div>ספר/י על עצמך</div>
+            <br />
+            <textarea class="roundedtxtbox" rows="5"></textarea>
+            <br />
+            <br />
+
+            <button class="button-3" role="button" type="reset">אפס</button>
+            <input onclick="saveFile()" class="button-3" role="button" type="submit" value="שלח">
+            <br />
+            <br />
+
+
+
+
+
+        </form>
+    </div>
+
+</body>
+</html>
